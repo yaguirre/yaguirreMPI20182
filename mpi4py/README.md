@@ -13,3 +13,19 @@
 
         $ cd mpi4py
         $ mpiexec -f ../hosts_mpi -n 4 /opt/anaconda3/bin/python helloWorld_MPI.py
+
+## correr los ejemplos del dir 'HelloWorldMPI'
+
+        $ sh executor.sh
+
+        o
+
+        $ mpiexec -f ../../hosts_mpi -np 8  /opt/anaconda3/bin/python ./hello_world1.py
+
+## corres los ejemplos del dir 'mpi4py-examples'      
+
+        $ sh executor.sh
+
+        o
+
+        $ mpiexec -f ../../hosts_mpi -np 8  /opt/anaconda3/bin/python ./01-hello-world.py
