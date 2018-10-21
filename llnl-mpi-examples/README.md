@@ -1,4 +1,7 @@
-# mpi20182
+# Universidad EAFIT
+# Curso ST0263 Tópicos Especiales en Telemática, 2018-2
+# Profesor: Edwin Montoya M. – emontoya@eafit.edu.co
+# Laboratorio de MPI
 
 * this lab is based on: https://computing.llnl.gov/tutorials/mpi/exercise.html
 
