@@ -7,4 +7,4 @@ fi
 PYTHON_HOME=/opt/anaconda3/bin
 CORES=$(nproc)
 EXAMPLE=09
-mpiexec -f ../hosts_mpi -np ${CORES} ${PYTHON_HOME}/python ./${EXAMPLE}*.py
+mpiexec -f ../../hosts_mpi -np ${CORES} ${PYTHON_HOME}/python ./${EXAMPLE}*.py
