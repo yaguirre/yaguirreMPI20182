@@ -15,8 +15,7 @@ CC    =   gcc
 #Add your choice of flags
 FLAGS   =   -O1
 
-all:	ser_2dfft       \
-	ser_array       \
+all:	ser_array       \
 	ser_heat2D      \
 	ser_mm          \
 	ser_pi_calc     \
@@ -27,7 +26,6 @@ clean:
 	/bin/rm  -rf    \
 	initial.dat     \
 	final.dat       \
-	ser_2dfft       \
 	ser_array       \
 	ser_heat2D      \
 	ser_mm          \
