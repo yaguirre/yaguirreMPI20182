@@ -18,9 +18,9 @@ if rank == 0:
 
 if rank == 1:
     receive = comm.recv(source=0, tag=2)
-    print receive, receive['d1']
+    print (receive, receive['d1'])
     receive2 = comm.recv(source=0, tag=1)
-    print receive2, receive2['d1']
+    print (receive2, receive2['d1'])
 
 # que pasaría si el orden importa y quiero recibir primero el shared2?
 

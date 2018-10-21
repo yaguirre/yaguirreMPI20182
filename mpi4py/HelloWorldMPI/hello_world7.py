@@ -13,4 +13,4 @@ else:
     data = None
 
 data = comm.bcast(data, root=0)
-print 'rank', rank, data
+print ('rank', rank, data)

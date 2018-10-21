@@ -16,10 +16,10 @@ if comm.rank == 0:
     sendbuf = m
 
 v = comm.scatter(sendbuf,root)
-print 'I got this array', v
+print ('I got this array', v)
 v = v * v
 recvbuf = comm.gather(v, root)
 
 if comm.rank == 0:
-    print numpy.array(recvbuf)
+    print (numpy.array(recvbuf))
 

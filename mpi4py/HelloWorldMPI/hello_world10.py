@@ -18,5 +18,5 @@ if comm.rank == 0:
     data = comm.recv(source=size-1)
 
 
-print "My rank is: " + str(rank)
-print "I receive this: ", data
+print ("My rank is: " + str(rank))
+print ("I receive this: ", data)

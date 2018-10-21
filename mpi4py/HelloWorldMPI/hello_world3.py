@@ -8,6 +8,6 @@ comm = MPI.COMM_WORLD
 rank = comm.rank
 size = comm.size
 
-print 'rank:', rank
-print 'node count:', size
-print 9**(rank+3)
+print ('rank:', rank)
+print ('node count:', size)
+print (9**(rank+3))

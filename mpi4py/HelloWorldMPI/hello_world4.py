@@ -16,15 +16,15 @@ if rank == 0:
     data = shared
     comm.send(data,dest=1)
     comm.send(data,dest=2)
-    print 'From rank', rank, 'we sent', data, 'and shared is:', shared
+    print ('From rank', rank, 'we sent', data, 'and shared is:', shared)
     time.sleep(5)
-    print 'I am finishing at rank', rank
+    print ('I am finishing at rank', rank)s
 elif rank == 1:
     data = comm.recv(source=0)
-    print 'on node', name, 'in rank:', rank ,'we received', data, 'and shared is:', shared
+    print ('on node', name, 'in rank:', rank ,'we received', data, 'and shared is:', shared)
 elif rank == 2:
     data = comm.recv(source=0)
-    print 'on node', name, 'in rank:', rank, 'we received', data, 'and shared is:', shared
+    print ('on node', name, 'in rank:', rank, 'we received', data, 'and shared is:', shared)
 
 # que pasa si intercambiamos los destinos y las fuentes?
 # cambie de lugar el time.sleep

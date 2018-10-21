@@ -14,5 +14,5 @@ shared = (rank+1)*7
 comm.send(shared,dest=(rank+1) % size)
 data = comm.recv(source=(rank-1) % size)
 
-print 'Name:', name, 'Rank:', rank, 'Received:', data, 'which came from rank:', (rank-1) % size
+print ('Name:', name, 'Rank:', rank, 'Received:', data, 'which came from rank:', (rank-1) % size)
 
