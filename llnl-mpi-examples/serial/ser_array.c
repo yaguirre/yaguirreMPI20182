@@ -8,7 +8,8 @@
 ****************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
-#define	ARRAYSIZE	16000000
+// #define	ARRAYSIZE	16000000
+#define	ARRAYSIZE	2000000
 
 int main(int argc, char *argv[])
 {

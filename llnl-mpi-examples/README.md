@@ -20,3 +20,10 @@
         $ mpirun -f ../../hosts_mpi -n 4 ./mpi_array
         $
         $ mpirun -f ../../hosts_mpi -n 4 ./mpi_latency
+
+* run serial examples:
+
+        $ cd llnl-mpi-examples/serial
+        $ ./ser_array
+        $
+        $ ./ser_head2D

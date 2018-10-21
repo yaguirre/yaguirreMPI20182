@@ -35,9 +35,6 @@ clean:
         *.o
 
 
-ser_2dfft:  ser_2dfft.c ser_fft.h
-	$(CC) $(FLAGS) ser_2dfft.c -o ser_2dfft -lm 
-
 ser_array: ser_array.c
 	${CC} ${FLAGS} ser_array.c -o ser_array 
 
@@ -55,4 +52,3 @@ ser_prime: ser_prime.c
 
 ser_wave: ser_wave.c
 	${CC} ${FLAGS} ser_wave.c -o ser_wave -lm
-
