@@ -7,8 +7,8 @@
 ###############################################################################
 
 #Uncomment your choice of compiler
-CC    =   icc
-#CC    =   gcc
+#CC    =   icc
+CC    =   gcc
 #CC    =   pathcc
 #CC    =   pgcc
 
