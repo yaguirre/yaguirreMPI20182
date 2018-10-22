@@ -11,10 +11,10 @@
 
 ## Helloword
 
-        $ cd mpi4py
+        $ cd mpi4py-examples
         $ mpiexec -f ../hosts_mpi -n 4 /opt/anaconda3/bin/python helloWorld_MPI.py
 
-## correr los ejemplos del dir 'HelloWorldMPI'
+## correr los ejemplos del dir 'basic-examples'
 
         $ sh executor.sh
 
@@ -22,7 +22,7 @@
 
         $ mpiexec -f ../../hosts_mpi -np 8  /opt/anaconda3/bin/python ./hello_world1.py
 
-## corres los ejemplos del dir 'mpi4py-examples'      
+## corres los ejemplos del dir 'advanced-examples'      
 
         $ sh executor.sh
 
