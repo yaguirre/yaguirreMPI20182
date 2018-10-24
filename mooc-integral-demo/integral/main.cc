@@ -1,6 +1,7 @@
 #include <cmath>
 #include <cstdio>
 #include <omp.h>
+#include <mpi.h>
 #include "library.h"
 
 const int nTrials = 10;
@@ -22,6 +23,12 @@ double Accuracy(const double I, const double a, const double b) {
 
 int main(int argc, char** argv) {
 
+  MPI_Init(&argc, &argv);
+
+  int rank, nRanks;
+  MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+  MPI_Comm_size(MPI_COMM_WORLD, &nRanks);
+
   const int n = 1000*1000*1000;
 
   printf("\n\033[1mNumerical integration with n=%d\033[0m\n", n);
@@ -34,8 +41,10 @@ int main(int argc, char** argv) {
     const double a = double(iTrial - 1);
     const double b = double(iTrial + 1);
 
+    MPI_Barrier(MPI_COMM_WORLD);
+
     const double t0 = omp_get_wtime();
-    const double I = ComputeIntegral(n, a, b);
+    const double I = ComputeIntegral(n, a, b, rank, nRanks);
     const double t1 = omp_get_wtime();
 
     const double ts   = t1-t0; // time in seconds
